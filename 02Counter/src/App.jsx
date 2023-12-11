@@ -26,8 +26,6 @@ function App() {
     if (upcheckValue(counter)) {
       setCounter(counter + 1)
     }
-    //setCounter(counter+1))
-
     //console.log(counter)
   }
   const removeValue = () => {
