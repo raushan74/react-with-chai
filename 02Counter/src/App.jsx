@@ -4,10 +4,10 @@ import { useState } from 'react'
 function App() {
   let [counter, setCounter] = useState(0)
 
-  // let counter = 15
+  // let counter = 0
 
   const upcheckValue = (value) => {
-    if (value >= 6) {
+    if (value >= 20) {
       return false;
     } else {
       return true;
@@ -24,13 +24,19 @@ function App() {
   const addValue = () => {
     //counter = counter + 1
     if (upcheckValue(counter)) {
-      setCounter(counter + 1)
+      setCounter((prevCounter) => prevCounter + 1)
+      setCounter(prevCounter => prevCounter + 1)
+      setCounter(prevCounter => prevCounter + 1)
+      setCounter(prevCounter => prevCounter + 1)
+      
     }
     //console.log(counter)
   }
   const removeValue = () => {
     if (dncheckValue(counter)) {
-      setCounter(counter - 1)
+      setCounter((prevCounter) => prevCounter - 1)
+      setCounter(prevCounter => prevCounter - 1)
+      setCounter(prevCounter => prevCounter - 1)
     }
   }
   return (
